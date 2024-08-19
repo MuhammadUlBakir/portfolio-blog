@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medium-style Blog Post</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./blog-post.style.css" />
 
-    <!-- <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medium-style Blog Post</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./blog-post.style.css" />
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -30,61 +31,88 @@
             }
         }
     </script> -->
-  </head>
-  <body>
-    <div class="progress-header">
-      <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
+</head>
+
+<body>
+
+  <navbar>
+    <div class="navbar">
+      <div class="left">
+        <h4>Your Name</h4>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars  menu"></i>
+          <!-- <i class="fa-solid fa-xmark "></i> -->
+        </div>
+      </div>
+      <div class="right-1">
+        <ul>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <div class="right-2">
+        <ul>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Newsletter</a></li>
+        </ul>
       </div>
     </div>
-    <div class="container">
-      <header class="header">
-        <h1>Your Blog Post Title Your Blog Post Title Your Blog Post Title</h1>
-        <p class="publish-date">Published on August 18, 2024</p>
-      </header>
-      <article>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
-          massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus.
-          Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.
-        </p>
-        <h2>Introduction</h2>
-        <p>
-          Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam
-          suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis
-          montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere
-          vulputate arcu amet, <a>vitae nisi, tellus</a> tincidunt. At feugiat
-          sapien varius id.
-        </p>
-        <img
-          src="https://ctrlshifters.b-cdn.net/notes/istockphoto-14093290%5BSBCDN_ljlznitl%5D.jpg"
-          alt="blog-img-1"
-        />
-        <ol>
-          <li>list1</li>
-          <li>list1</li>
-          <li>list1</li>
-        </ol>
-        <pre>
+  </navbar>
+
+
+  <div class="container">
+    <header class="header">
+      <a href=""><i class="fa-solid fa-arrow-left"></i> back</a>
+      <h1>Your Blog Post Title Your Blog Post Title Your Blog Post Title</h1>
+      <p class="publish-date">Published on August 18, 2024</p>
+    </header>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
+        massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus.
+        Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.
+      </p>
+      <h2>Introduction</h2>
+      <p>
+        Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam
+        suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis
+        montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere
+        vulputate arcu amet, <a>vitae nisi, tellus</a> tincidunt. At feugiat sapien
+        varius id.
+      </p>
+      <div class="img-wrapper">
+        <img src="https://ctrlshifters.b-cdn.net/notes/istockphoto-14093290%5BSBCDN_ljlznitl%5D.jpg" alt="blog-img-1" />
+      </div>
+      <ol>
+        <li>list1</li>
+        <li>list1</li>
+        <li>list1</li>
+      </ol>
+      <pre>
             <code>
               function greet(name) {
                 console.log('Hello,'+ name);
               }
               greet('John Doe');
             </code>
-  
         </pre>
-        <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
-          massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus.
-          Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.
-          <cite>Author Name</cite>
-        </blockquote>
-      </article>
-    </div>
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
+        massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus.
+        Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.
+        <cite>Author Name</cite>
+      </blockquote>
+    </article>
+  </div>
 
-    <script src="./progess-scroll.js"></script>
-  </body>
+  <script src="/blog-post.js"></script>
+</body>
+
 </html>
