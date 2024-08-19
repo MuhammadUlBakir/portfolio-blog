@@ -21,5 +21,7 @@ window.addEventListener('resize', () => {
     if (window.innerWidth > 768) { // Adjust this breakpoint as needed
         right.classList.remove('show');
         body.classList.remove('blurred');
+        menu.classList.remove('fa-xmark');
     }
 });
+
