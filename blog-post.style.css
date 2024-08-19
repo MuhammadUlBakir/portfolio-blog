@@ -85,6 +85,9 @@ p {
 }
 
 /* navbar style */
+navbar {
+  background-color: rgb(157, 101, 101);
+}
 
 .navbar {
   background-color: black;
